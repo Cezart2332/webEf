@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="public/vite.svg" />
+    <title>Login — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth">
+      <a class="logo" href="./">Shoply</a>
+      <h1 class="auth-title">Welcome back</h1>
+      <p class="muted">Sign in to continue to your account.</p>
+
+      <div class="card form">
+        <label>
+          <span>Email</span>
+          <input id="email" type="email" placeholder="you@email.com" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="password" type="password" placeholder="••••••••" required />
+        </label>
+        <button class="btn btn-primary btn-block" id="login" role="button">Login</button>
+        <p class="muted small center">Tip: This is a static demo. Any credentials will "work".</p>
+      </div>
+
+  <p class="muted small center">No account? <a href="./signup.html">Sign up</a> or <a href="./admin-signup.html">Admin sign up</a></p>
+      <p class="muted small center"><a href="./">← Back to Home</a></p>
+    </main>
+    <script src="javascript/login.js"></script>
+  </body>
+</html>

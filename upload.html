@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Upload Product — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth" style="max-width:720px;">
+      <a class="logo" href="./">Shoply</a>
+      <h1 class="auth-title">Upload product</h1>
+      <p class="muted">Quick admin tool to publish new products.</p>
+
+      <div class="card form">
+        <label>
+          <span>Product image</span>
+          <div class="uploader">
+            <input id="p-file" type="file" accept="image/*" />
+            <div class="uploader-inner">
+              <div class="uploader-icon">📷</div>
+              <div>
+                <strong>Click to choose</strong> or drag & drop
+                <div class="muted small">PNG, JPG up to ~5MB</div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label>
+          <span>Name</span>
+          <input id="p-name" type="text" placeholder="Minimal Tee" required />
+        </label>
+        <label>
+          <span>Price</span>
+          <input id="p-price" type="text" placeholder="$24" required />
+        </label>
+        <label>
+          <span>Description</span>
+          <textarea id="p-desc" rows="4" placeholder="Write a short description" required></textarea>
+        </label>
+        <label>
+          <span>Photo URL</span>
+          <input id="p-photo" type="url" placeholder="Will be filled after upload" readonly />
+        </label>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-primary" id="publish-product" type="button">Publish</button>
+          <a class="btn btn-outline" href="./index.html">Preview on Home</a>
+        </div>
+        <p class="muted small">Note: Static UI — upload the image via JS/API to get a URL, then store that URL in your backend.</p>
+      </div>
+
+      <p class="muted small center"><a href="./">← Back to Home</a></p>
+    </main>
+    <script src="javascript/upload.js"></script>
+  </body>
+</html>

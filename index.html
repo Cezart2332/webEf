@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="public/vite.svg" />
+    <title>Shoply — Beautiful Minimal E‑commerce</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="./">Shoply</a>
+        <nav id="nav-bar" class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#categories">Categories</a>
+          <a href="./products.html">Products</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1 class="hero-title">Discover products you’ll love</h1>
+          <p class="hero-subtitle">A clean, modern storefront with buttery‑smooth hover effects and tasteful motion — all HTML & CSS, zero JavaScript.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="./products.html">Shop now</a>
+            <a class="btn btn-ghost" href="#features">Learn more</a>
+          </div>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title">Why Shoply</h2>
+          <div class="grid features-grid">
+            <article class="card feature">
+              <div class="icon">🚚</div>
+              <h3>Fast Shipping</h3>
+              <p>Reliable delivery with real‑time updates and eco‑friendly packaging.</p>
+            </article>
+            <article class="card feature">
+              <div class="icon">⭐</div>
+              <h3>Top Quality</h3>
+              <p>Curated items from trusted brands with rigorous quality checks.</p>
+            </article>
+            <article class="card feature">
+              <div class="icon">🔒</div>
+              <h3>Secure Checkout</h3>
+              <p>Privacy‑first design and standards‑compliant forms without scripts.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section id="categories" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Browse Categories</h2>
+          <div class="grid categories-grid">
+            <a class="category tile tile-a" href="#products">
+              <span>Apparel</span>
+            </a>
+            <a class="category tile tile-b" href="#products">
+              <span>Gadgets</span>
+            </a>
+            <a class="category tile tile-c" href="#products">
+              <span>Home</span>
+            </a>
+            <a class="category tile tile-d" href="#products">
+              <span>Beauty</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="section">
+        <div class="container">
+          <h2 class="section-title">Featured Products</h2>
+          <div id="products-grid" class="grid products-grid">
+            <a class="card product" href="./product.html">
+              <div class="media">
+                <img src="https://placehold.co/800x500/png?text=Photo" alt="Product photo placeholder" />
+              </div>
+              <h3>Minimal Tee</h3>
+              <p class="price">$24</p>
+            </a>
+            <a class="card product" href="./product.html">
+              <div class="media ph-b"></div>
+              <h3>Wireless Buds</h3>
+              <p class="price">$89</p>
+            </a>
+            <a class="card product" href="./product.html">
+              <div class="media ph-c"></div>
+              <h3>Ceramic Mug</h3>
+              <p class="price">$18</p>
+            </a>
+            <a class="card product" href="./product.html">
+              <div class="media ph-d"></div>
+              <h3>Smart Watch</h3>
+              <p class="price">$129</p>
+            </a>
+            <a class="card product" href="./product.html">
+              <div class="media ph-e"></div>
+              <h3>Throw Pillow</h3>
+              <p class="price">$29</p>
+            </a>
+            <a class="card product" href="./product.html">
+              <div class="media ph-f"></div>
+              <h3>Skincare Set</h3>
+              <p class="price">$54</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter CTA -->
+      <section class="section cta">
+        <div class="container cta-inner">
+          <h2>Get 10% off your first order</h2>
+          <p>Join our newsletter for fresh drops and exclusive offers.</p>
+          <form class="inline-form" action="#" method="post">
+            <input type="email" name="email" placeholder="you@email.com" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Latest uploads (populated later via JS) -->
+      <section id="latest" class="section">
+        <div class="container">
+          <h2 class="section-title">Latest uploads</h2>
+          <div class="grid products-grid" id="latest-uploads">
+            <div class="card empty-state">
+              <p class="muted">No products yet. Publish from the Admin dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </nav>
+        <p class="muted">© <span id="year">2025</span> Shoply. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="javascript/index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Admin Login — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth">
+      <a class="logo" href="./">Shoply</a>
+      <h1 class="auth-title">Admin access</h1>
+      <p class="muted">Sign in to manage the store.</p>
+
+      <div class="card form">
+        <label>
+          <span>Admin Email</span>
+          <input type="email" placeholder="admin@shoply.com" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" placeholder="••••••••" required />
+        </label>
+        <a class="btn btn-primary btn-block" href="./admin.html" role="button">Sign in</a>
+        <p class="muted small center">Static demo — credentials are not validated.</p>
+      </div>
+
+      <p class="muted small center">Need an account? <a href="./admin-signup.html">Admin sign up</a></p>
+      <p class="muted small center">Not an admin? <a href="./login.html">User login</a></p>
+      <p class="muted small center">
+        <a href="./">← Back to Home</a>
+      </p>
+    </main>
+  </body>
+</html>

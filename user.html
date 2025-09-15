@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Your Account — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="nav-links">
+          <a href="./">Storefront</a>
+          <a class="btn btn-ghost" href="#orders">Orders</a>
+          <a class="btn btn-ghost" href="#saved">Saved</a>
+          <a class="btn btn-primary" href="./login.html">Log out</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="display:grid; gap:22px;">
+        <h1 class="page-title">Your Account</h1>
+
+        <div class="grid" style="display:grid; grid-template-columns: 1fr .8fr; gap: var(--grid-gap);">
+          <section id="orders" class="card">
+            <h3>Recent Orders</h3>
+            <div class="table">
+              <div class="row head"><span>#</span><span>Date</span><span>Total</span><span>Status</span></div>
+              <div class="row"><span>2045</span><span>Sep 10, 2025</span><span>$129</span><span class="badge success">Delivered</span></div>
+              <div class="row"><span>2039</span><span>Aug 28, 2025</span><span>$54</span><span class="badge success">Delivered</span></div>
+              <div class="row"><span>2034</span><span>Aug 12, 2025</span><span>$24</span><span class="badge warn">Processing</span></div>
+            </div>
+          </section>
+
+          <aside id="saved" class="card">
+            <h3>Saved Items</h3>
+            <div class="grid" style="display:grid; grid-template-columns: 1fr; gap: 12px;">
+              <div class="card product" style="padding:12px;">
+                <div class="media ph-b" style="height:120px;"></div>
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                  <div>
+                    <strong>Wireless Buds</strong>
+                    <div class="price">$89</div>
+                  </div>
+                  <a class="btn btn-outline" href="./login.html">Add to cart</a>
+                </div>
+              </div>
+              <div class="card product" style="padding:12px;">
+                <div class="media ph-c" style="height:120px;"></div>
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                  <div>
+                    <strong>Ceramic Mug</strong>
+                    <div class="price">$18</div>
+                  </div>
+                  <a class="btn btn-outline" href="./login.html">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="footer-links">
+          
+          <a href="#">Help</a>
+        </nav>
+        <p class="muted">This is a static user dashboard demo.</p>
+      </div>
+    </footer>
+  </body>
+</html>

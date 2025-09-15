@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Saved Items — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="nav-links">
+          <a href="./products.html">Products</a>
+          <a href="./saved.html" class="active">Saved</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container" style="display:grid; gap:22px;">
+        <h1 class="page-title">Saved Items</h1>
+        <div id="saved-products" class="grid" style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--grid-gap);">
+          <div class="card product" style="padding:12px;">
+            <div class="media ph-b" style="height:160px;"></div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:10px;">
+              <div>
+                <strong>Wireless Buds</strong>
+                <div class="price">$89</div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <a class="btn btn-outline" href="./product.html">View</a>
+                <a class="btn btn-primary" href="./login.html">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card product" style="padding:12px;">
+            <div class="media">
+                <img src="https://placehold.co/800x500/png?text=Photo" alt="Product photo placeholder" />
+              </div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:10px;">
+              <div>
+                <strong>Ceramic Mug</strong>
+                <div class="price">$18</div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <a class="btn btn-outline" href="./product.html">View</a>
+                <a class="btn btn-primary" href="./login.html">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="muted">This is a static demo. Later, you can hide this page if the user isn’t logged in.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </nav>
+        <p class="muted">Static saved items page — no JS yet.</p>
+      </div>
+    </footer>
+    <script src="javascript/saved.js"></script>
+  </body>
+</html>

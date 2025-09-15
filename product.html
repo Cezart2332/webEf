@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Minimal Tee — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="./">Shoply</a>
+        <nav id="nav-bar" class="nav-links">
+          <a href="./products.html">Products</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="./">Home</a>
+          <span>/</span>
+          <a href="./products.html">Products</a>
+          <span>/</span>
+          <span class="muted">Minimal Tee</span>
+        </nav>
+
+        <div id="product" class="product-layout">
+          <div class="product-media card">
+            <div class="media vertical">
+              <img src="https://placehold.co/800x500/png?text=Photo" alt="Minimal Tee photo" />
+            </div>
+          </div>
+          <div class="product-info">
+            <h1 class="page-title">Minimal Tee</h1>
+            <p class="price" style="font-size:22px;">$24</p>
+            <p class="muted description">
+              A premium cotton t‑shirt with a clean, minimal cut. Soft, breathable, and made for everyday wear.
+            </p>
+            <div style="display:flex; gap:10px; margin-top:14px;">
+              <a class="btn btn-primary" id="save-button">Save</a>
+              <a class="btn btn-outline" href="./products.html">Continue shopping</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="./">Shoply</a>
+        <nav class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </nav>
+        <p class="muted">Static product page — no JS.</p>
+      </div>
+    </footer>
+    <script src="javascript/product.js"></script>
+  </body>
+</html>

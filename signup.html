@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="public/vite.svg" />
+    <title>Sign up — Shoply</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-body">
+    <main class="auth">
+      <a class="logo" href="./">Shoply</a>
+      <h1 class="auth-title">Sign up</h1>
+      <p class="muted">Create your account to start shopping.</p>
+
+      <div class="card form">
+        <label>
+          <span>Username</span>
+          <input id="user" type="text" placeholder="yourname" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input id="email" type="email" placeholder="you@email.com" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="password" type="password" placeholder="Create a password" required />
+        </label>
+        <button class="btn btn-primary btn-block" id="register" role="button">Create account</button>
+      </div>
+
+      <p class="muted small center">
+        Already have an account? <a href="./login.html">Log in</a>
+      </p>
+      <p class="muted small center">
+        <a href="./">← Back to Home</a>
+      </p>
+    </main>
+    <script src ="javascript/register.js"></script>
+  </body>
+</html>
